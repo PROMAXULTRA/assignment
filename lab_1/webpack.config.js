@@ -14,8 +14,8 @@ module.exports = {
          test: /\.jsx?$/, // To load the js and jsx files
          loader: 'babel-loader',
          exclude: /node_modules/,
-         query: {
-            query: ["@babel/preset-env", "@babel/preset-react"]
+         options: {
+            presets: ["@babel/preset-env", "@babel/preset-react"]
          }
       }]
    }
